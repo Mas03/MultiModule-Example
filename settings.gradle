@@ -1,0 +1,6 @@
+rootProject.name = 'MultiModule'
+include 'App'
+include 'Core'
+include 'App:BetaApp'
+findProject(':App:BetaApp')?.name = 'BetaApp'
+
